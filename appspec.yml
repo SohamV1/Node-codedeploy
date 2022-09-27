@@ -3,4 +3,8 @@ os: linux
 files: 
   - source: /
     destination: /usr/share/nginx/html
+hooks:
+  ApplicationStart:
+    - location: script.sh
+      runas: root
     
